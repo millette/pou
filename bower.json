@@ -1,9 +1,7 @@
 {
   "name": "foundation-sites-template",
   "version": "0.0.0",
-  "description": "Basic template for a new Foundation for Sites project.",
   "main": "index.html",
-  "homepage": "http://foundation.zurb.com",
   "dependencies": {
     "foundation-sites": "~6.3.0",
     "motion-ui": "~1.2.2"

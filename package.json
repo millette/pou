@@ -1,7 +1,6 @@
 {
   "name": "foundation-sites-template",
   "version": "0.0.0",
-  "description": "Basic template for a new Foundation for Sites project.",
   "main": "gulpfile.js",
   "devDependencies": {
     "gulp": "^3.9.0",
@@ -12,8 +11,8 @@
   },
   "scripts": {
     "lint": "standard",
-    "start": "gulp",
-    "build": "gulp sass"
+    "start": "standard && gulp",
+    "build": "standard && gulp sass"
   },
   "private": true
 }
