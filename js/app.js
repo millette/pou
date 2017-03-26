@@ -1,1 +1,5 @@
-$(document).foundation();
+/* global $ */
+
+'use strict'
+
+$(document).foundation()
