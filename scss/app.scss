@@ -1,0 +1,35 @@
+@charset 'utf-8';
+
+@import 'my-foundation';
+
+.container {
+  @include grid-row;
+
+  @include grid-row-size('expand');
+
+/*
+  @include grid-row-size(expand);
+
+  margin-right: auto;
+  margin-left: auto;
+*/
+
+  .one {
+    border: thin solid black;
+    @include grid-column(3);
+  }
+
+  .two {
+    border: thin solid black;
+    @include grid-column(6);
+  }
+
+  .three {
+    border: thin solid black;
+    @include grid-column(3);
+  }
+}
+
+.full {
+  @include grid-column-row;
+}
