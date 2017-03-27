@@ -1,179 +1,170 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="fr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
-    <link rel="stylesheet" href="css/app.css">
+    <title>Mon site est pourri!</title>
+    <link rel="stylesheet" href="/css/app.css">
   </head>
   <body>
-    <div class="full">
-        <h1>Welcome to Foundation</h1>
-    </div>
-
-    <div class="container">
-      <div class="one">
-        <h2>Column 1</h2>
+    <div class="top-bar">
+      <div class="top-bar-title">
+        <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
+          <button class="menu-icon dark" type="button" data-toggle></button>
+        </span>
+        <a href="/">
+          <img src="/img/emotion-acidulous.svg" alt="Logo de Mon site est pourri!">
+        </a>
       </div>
-      <div class="two">
-        <h2>Column 2</h2>
-      </div>
-      <div class="three">
-        <h2>Column 3</h2>
-      </div>
-    </div>
-
-
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="callout">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 medium-push-2 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-            </div>
-            <div class="large-4 medium-4 medium-pull-2 columns">
-              <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>
-          </div>
+      <div id="responsive-menu">
+        <div class="top-bar-left">
+          <ul class="menu">
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="top-bar-right">
+          <form method="get">
+            <ul class="menu">
+              <li><input name="search" type="search" placeholder="Chercher"></li>
+              <li><button type="submit" class="button">Chercher</button></li>
+            </ul>
+          </form>
         </div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
+    <div class="row column">
+      <h1 class="title">Mon site est pourri<small>, au secours!</small></h1>
+      <p class="lead">
+        Votre site web actuel ne vous satisfait pas? Vous vous demandez
+        comment améliorer la situation? Nous sommes là pour vous guider et vous aider.
+      </p>
+    </div>
 
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="primary callout">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.callout element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
-          </div>
+    <div class="row" data-equalizer data-equalize-on="medium">
+      <div class="column medium-4" data-toggler=".hide">
+        <a href="#lent">
+        <div class="callout primary" data-equalizer-watch>
+          <h5>Mon site est trop lent!</h5>
+          <blockquote>
+            Mes visiteurs perdent beaucoup moins de temps
+            et mon serveur utilise moins de ressources.
+            <cite>un futur client</cite>
+          </blockquote>
         </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="primary callout">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="primary callout">
-              <p>Six columns</p>
-            </div>
-          </div>
+        </a>
+        <div class="hidden">
+          <h4>Nos solutions</h4>
+          <p>
+            More info you'll soon find out about!
+          </p>
         </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="primary callout">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="primary callout">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="primary callout">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
-
-        <hr />
-
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="input-group">
-                  <input type="text" placeholder="small-9.columns" class="input-group-field" />
-                  <span class="input-group-label">.com</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-            </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-        </form>
       </div>
-
-      <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="button">Simple Button</a><br/>
-        <a href="#" class="success button">Success Btn</a><br/>
-        <a href="#" class="alert button">Alert Btn</a><br/>
-        <a href="#" class="secondary button">Secondary Btn</a></p>
-        <div class="callout">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/sites/docs/" class="small button">Go to Foundation Docs</a>
+      <div class="column medium-4" data-toggler=".hide">
+        <a href="#encryption">
+        <div class="callout alert" data-equalizer-watch>
+          <h5>Mon site n’est pas encrypté!</h5>
+          <blockquote>
+            Mes visiteurs ont une plus grande confiance
+            depuis que mon site utilise <code>https</code>.
+            <cite>un futur client</cite>
+          </blockquote>
+        </div>
+        </a>
+        <div class="hidden">
+          <h4>Nos solutions</h4>
+          <p>
+            More info you'll soon find out about!
+          </p>
+        </div>
+      </div>
+      <div class="column medium-4" data-toggler=".hide">
+        <a href="#vieux">
+        <div class="callout" data-equalizer-watch>
+          <h5>Mon site est trop vieux!</h5>
+          <blockquote>
+            Avant, j’étais inquiet que mon site se fasse <i>cracker</i>
+            mais là je sais qu’il est à jour sans faille de sécurité connues.
+            <cite>un futur client</cite>
+          </blockquote>
+        </div>
+        </a>
+        <div class="hidden">
+          <h4>Nos solutions</h4>
+          <p>
+            More info you'll soon find out about!
+          </p>
         </div>
       </div>
     </div>
 
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/what-input/dist/what-input.js"></script>
-    <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
-    <script src="js/app.js"></script>
+    <div class="row" data-equalizer data-equalize-on="medium">
+      <div class="column medium-4" data-toggler=".hide">
+        <a href="#complexe">
+        <div class="callout warning" data-equalizer-watch>
+          <h5>Mon site est trop compliqué!</h5>
+          <blockquote>
+            J’avais peur de modifier mon site et mes visiteurs s’y perdaient.
+            C’est beaucoup plus intuitif maintenant.
+            <cite>un futur client</cite>
+          </blockquote>
+        </div>
+        </a>
+        <div class="hidden">
+          <h4>Nos solutions</h4>
+          <p>
+            More info you'll soon find out about!
+          </p>
+        </div>
+      </div>
+      <div class="column medium-4" data-toggler=".hide">
+        <a href="#laid">
+        <div class="callout secondary" data-equalizer-watch>
+          <h5>Mon site est trop laid!</h5>
+          <blockquote>
+            Quand j’ai lancé mon site en 2009, il était à la fine pointe du design web.
+            8 ans plus tard, j’avais vraiment besoin de ce coup de pinceau.
+            <cite>un futur client</cite>
+          </blockquote>
+        </div>
+        </a>
+        <div class="hidden">
+          <h4>Nos solutions</h4>
+          <p>
+            More info you'll soon find out about!
+          </p>
+        </div>
+      </div>
+      <div class="column medium-4" data-toggler=".hide">
+        <a href="#trop">
+        <div class="callout success" data-equalizer-watch>
+          <h5>Mon site est juste trop!</h5>
+          <blockquote>
+            J’avais toutes sortes de problèmes
+            et je ne savais pas par où commencer. Merci pour vos lumières.
+            <cite>un futur client</cite>
+          </blockquote>
+        </div>
+        </a>
+        <div class="hidden">
+          <h4>Nos solutions</h4>
+          <p>
+            More info you'll soon find out about!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="callout secondary">
+      <p>Site et services par <a href="http://robin.millette.info">Robin Millette</a> et compagnie</p>
+      <p>Logo par <a href="https://openclipart.org/detail/218438/acidulous-emotion-faces">algotruneman</a></p>
+    </footer>
+
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/what-input/dist/what-input.min.js"></script>
+    <script src="/bower_components/foundation-sites/dist/js/foundation.min.js"></script>
+    <script src="/js/app.js"></script>
   </body>
 </html>
