@@ -1,35 +1,63 @@
 @charset 'utf-8';
 
 @import 'my-foundation';
+@include motion-ui-transitions;
 
-.container {
-  @include grid-row;
-
-  @include grid-row-size('expand');
-
-/*
-  @include grid-row-size(expand);
-
-  margin-right: auto;
-  margin-left: auto;
-*/
-
-  .one {
-    border: thin solid black;
-    @include grid-column(3);
-  }
-
-  .two {
-    border: thin solid black;
-    @include grid-column(6);
-  }
-
-  .three {
-    border: thin solid black;
-    @include grid-column(3);
+.top-bar-title {
+  span { margin-right: 1.5rem }
+  a img {
+    padding: 0 0.75rem;
+    height: 2rem;
   }
 }
 
+footer.callout {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+
+blockquote {
+  text-align: right;
+  margin-left: 2em;
+  padding-left: 1em;
+}
+
+h5 { text-align: center; }
+
+/*
+@keyframes pouf {
+  100% { opacity: 0% }
+  0% { opacity: 100% }
+}
+*/
+
+.hide {
+  display: none;
+  /*
+  animation-name: pouf;
+  animation-duration: 3s;
+  // animation-fill-mode: none;
+  // animation-direction: alternate;
+  */
+}
+
+@keyframes stretch {
+  100% { width: 100% }
+}
+
 .full {
-  @include grid-column-row;
+  animation-name: stretch;
+  animation-duration: 0.667s;
+  animation-fill-mode: both;
+  animation-timing-function: ease;
+}
+
+.column.medium-4[data-toggler=".hide"] .hidden {
+  display: none;
+}
+
+.full .hidden {
+  display: block !important;
 }
