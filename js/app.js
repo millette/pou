@@ -19,3 +19,13 @@ $('.column.medium-4').each(function () {
     })
   })
 })
+
+$('button.close-button').click(function (ev) {
+  var $p = $(this).parents('.callout')
+  var $p2
+  if (!$p.length) { return }
+  $p2 = $p.prev('a')
+  if (!$p2.length) { return }
+  ev.preventDefault()
+  $p2.click()
+})
