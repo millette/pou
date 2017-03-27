@@ -12,6 +12,7 @@ $('.column.medium-4').each(function () {
   var $par = $(this)
   $par.data('what', hash)
   $a.click(function (ev) {
+    $(this).blur()
     $par.toggleClass('full')
     $('[data-toggler=".hide"]').each(function () {
       var $this = $(this)

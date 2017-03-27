@@ -25,26 +25,9 @@ blockquote {
 
 h5 { text-align: center; }
 
-/*
-@keyframes pouf {
-  100% { opacity: 0% }
-  0% { opacity: 100% }
-}
-*/
+.hide { display: none; }
 
-.hide {
-  display: none;
-  /*
-  animation-name: pouf;
-  animation-duration: 3s;
-  // animation-fill-mode: none;
-  // animation-direction: alternate;
-  */
-}
-
-@keyframes stretch {
-  100% { width: 100% }
-}
+@keyframes stretch { 100% { width: 100% } }
 
 .full {
   animation-name: stretch;
@@ -53,10 +36,17 @@ h5 { text-align: center; }
   animation-timing-function: ease;
 }
 
-.column.medium-4[data-toggler=".hide"] .hidden {
-  display: none;
+.full .hidden { display: block !important; }
+
+.column.medium-4[data-toggler=".hide"] {
+  .hidden { display: none; }
+
+  a { display: block; }
+
+  a:focus {
+    // -moz-box-shadow: 0 0 3rem gold;
+    // -webkit-box-shadow: 0 0 3rem gold;
+    box-shadow: 0 0 4rem gold;
+  }
 }
 
-.full .hidden {
-  display: block !important;
-}
