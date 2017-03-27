@@ -2,8 +2,8 @@
 git clone https://github.com/millette/pou.git
 cd pou
 yarn && bower install
-php -S localhost:1234
-yarn start & firefox http://localhost:1234
+yarn start & php -S localhost:1234
+firefox http://localhost:1234
 ```
 
 # Original readme
