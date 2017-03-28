@@ -52,5 +52,10 @@ h5 { text-align: center; }
 
 .close-button {
   display: block;
-  // background: red;
+}
+
+img.logo {
+  float: right;
+  margin: 0 0 2rem 1rem;
+  background: $light-gray;
 }
