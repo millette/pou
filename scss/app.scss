@@ -36,10 +36,10 @@ h5 { text-align: center; }
   animation-timing-function: ease;
 }
 
-.full .hidden { display: block !important; }
+.full .hidden2 { display: block !important; }
 
 .column.medium-4[data-toggler=".hide"] {
-  .hidden { display: none; }
+  .hidden2 { display: none; }
 
   a { display: block; }
 

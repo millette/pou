@@ -30,3 +30,6 @@ $('button.close-button').click(function (ev) {
   ev.preventDefault()
   $p2.click()
 })
+
+// everything is shown if js is disabled
+$('.hidden').addClass('hidden2')
